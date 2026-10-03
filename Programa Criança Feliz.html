@@ -1,0 +1,143 @@
+Claro. Organizei o código mantendo **a mesma funcionalidade**, mas deixando HTML, CSS e JavaScript mais legíveis, com nomes e funções melhor estruturados e comentários nas partes importantes.
+
+ Código HTML organizado — Criança Feliz
+
+```
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="style.css">
+
+  <title>Criança Feliz</title>
+
+  
+</head>
+
+<body>
+
+  <div class="wrap">
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+      <div class="emoji">🧸</div>
+
+      <h1>Programa Criança Feliz</h1>
+
+      <p>
+        Cuidar da primeira infância é cuidar do futuro
+      </p>
+    </header>
+
+    <!-- =========================
+         SOBRE O PROGRAMA
+    ========================== -->
+
+    <section class="card">
+      <h2>Sobre o programa</h2>
+
+      <p>
+        O Criança Feliz é um programa do Governo Federal que
+        apoia o desenvolvimento de gestantes e crianças na
+        primeira infância, por meio de visitas domiciliares
+        de orientação às famílias.
+      </p>
+
+      <ul>
+        <li>Fortalece o vínculo entre família e criança</li>
+        <li>
+          Estimula o desenvolvimento físico, afetivo,
+          social e cognitivo
+        </li>
+        <li>
+          Articula saúde, educação e assistência social
+        </li>
+      </ul>
+    </section>
+
+    <!-- =========================
+         FORMULÁRIO
+    ========================== -->
+
+    <section class="card">
+      <h2>Adicionar criança</h2>
+
+      <label for="nome">
+        Nome da criança
+      </label>
+
+      <input
+        id="nome"
+        type="text"
+        placeholder="Ex.: Maria Silva"
+        autocomplete="off"
+      >
+
+      <label for="nasc">
+        Data de nascimento
+      </label>
+
+      <input
+        id="nasc"
+        type="date"
+      >
+
+      <div
+        class="err"
+        id="err"
+        aria-live="polite"
+      ></div>
+
+      <button
+        class="add"
+        id="btn"
+        type="button"
+      >
+        ➕ Adicionar à lista
+      </button>
+    </section>
+
+    <!-- =========================
+         LISTA DE CRIANÇAS
+    ========================== -->
+
+    <section class="card">
+
+      <div class="top">
+        <h2>Crianças cadastradas</h2>
+
+        <span
+          class="badge"
+          id="count"
+        >
+          0
+        </span>
+      </div>
+
+      <div id="lista"></div>
+
+    </section>
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+      Os dados ficam salvos somente neste navegador.
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
